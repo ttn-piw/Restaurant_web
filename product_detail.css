@@ -1,0 +1,87 @@
+.container{
+    max-width: 100%;
+    background-color:#fff;
+}
+.container .content{
+    width: 90%;
+    display: flex;
+    margin: 20px 20px;
+}
+.content .left_image{
+    position: relative;
+    justify-content: left;
+    justify-items: left;
+    display: inline;
+}
+.left_image img{
+    width: 550px;
+}
+.content_right{
+    flex-direction: column;
+    width: 900px;
+    display: inline-block;
+    margin-top: 22px;
+}
+.content_right h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.content_right p{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.content_right p select{
+    font-size: 20px;
+    border-radius: 2px;
+}
+button{
+    background-color: #242526;
+    color: #fff;
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    height: 50px;
+}
+button:hover{
+    background-color: white;
+    font-weight: 600;
+    color: #000000;
+    transition: 0.5s ease-in-out;
+}
+
+.des_detail{
+    margin: 20px;
+}
+.des_detail h3{
+    margin: 30px 0 ;
+    font-size: 40px;
+    opacity: 0.7;
+}
+.des_detail p{
+    font-size: 25px;
+    margin: 0px 20px 20px 20px;
+}
+.size_ins{
+    font-size: 25px;
+}
+.size_ins h4{
+    margin: 0px;
+    font-size: 30px;
+}
+.relate_product{
+    margin: 20px;
+    margin-top: 80px;
+}
+.relate_product h2{
+    font-size: 30px;
+}
+.relate_product_img{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 20px;
+}
+.relate_product_img img{
+    width: 400px;
+    height: 500px;
+}
