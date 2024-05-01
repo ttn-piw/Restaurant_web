@@ -1,5 +1,12 @@
 <?php
     include('php/connectdb.php');
+    session_start();
+
+    if(isset($_SESSION['username'])){
+        echo $_SESSION['username'];
+    } else {
+        echo "Dont have username";
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,13 +38,21 @@
                     $rs_show_product = $connect->query($sql_show_product);
                     if ($rs_show_product->num_rows > 0 ){
                         while($row_show_product = $rs_show_product->fetch_assoc()){
+                            $pid = $row_show_product['pid'];
                             $p_name = $row_show_product['p_name'];
                             $p_image = $row_show_product['p_image'];
                             $p_price = $row_show_product['p_price'];
 
                             echo '<div class="item">
-                                    <img src="'.$p_price.'" alt="">
-                                    <div class="addcart">Đặt món</div>
+                                    <div class="img">
+                                        <a href="product_detail.php?pid='.$pid.'">
+                                            <img src="'.$p_image.'">
+                                        </a>
+                                    </div>
+                                    <form action="cart.php" method="post">
+                                            <input type="hidden" name="pid" value="'. $pid.'">
+                                            <input type="submit" class="BtnBuy" name="submit" value="Đặt hàng"> 
+                                    </form>
                                     <div class="p_name">'.$p_name.'</div>
                                     <div class="p_price"><span class="up_price">40,000</span><span class="real_price">'.number_format($p_price,3).'</span><sub>VNĐ</sub></div>
                                  </div>';

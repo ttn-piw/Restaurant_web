@@ -1,0 +1,188 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+/* sidebar admin */
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.container .content {
+  text-align: center;
+}
+
+.container .content h3 {
+  font-size: 30px;
+  color: #333;
+}
+
+.container .content h3 span {
+  background-color: crimson;
+  color: white;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+
+.container .content h1 {
+  font-size: 50px;
+  color: #333;
+}
+
+.container .content h1 span {
+  color: crimson;
+}
+
+.container .content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.container .content .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #333;
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: bisque;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3b3131;
+  overflow-x: hidden;
+  padding-top: 30px;
+  transition: 0.5s;
+}
+
+.sidebar .side-menu a {
+  padding: 12px 8px 12px 28px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar .side-menu a i {
+  margin-right: 8px;
+}
+.sidebar .side-header {
+  margin-left: 30px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.sidebar .side-header h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+
+.sidebar .side-header span {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.sidebar .side-menu a:hover {
+  background-color: #584e46;
+}
+
+/* User table */
+.big-table {
+  margin-left: 240px;
+  overflow-x: auto;
+  margin-top: 70px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: calc(100% - 100px);
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.table th {
+  background-color: #f0f0f0;
+}
+
+.edit-btn,
+.delete-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.no-users {
+  text-align: center;
+  font-style: italic;
+  color: #999;
+}
+.logout-btn {
+  position: fixed;
+  bottom: 20px;
+  z-index: 9999;
+  background-color: rgb(255, 63, 52);
+  margin-left: 30px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn a {
+  color: white;
+  text-decoration: none;
+}
+.logout-btn i {
+  color: white;
+  margin-right: 3px;
+}
+.logout-btn:hover {
+  background-color: rgb(255, 94, 87);
+}

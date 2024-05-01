@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.content{
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+
+.content .table-left{
+    width: 60%;
+    padding-left: 2%;
+    font-size: 19px;
+    padding-right: 20px;
+}
+table{
+    text-align: center;
+}
+table tr{
+    text-align: center;
+    padding-left: 30px;
+}
+.table-left tr td, table tr th{
+    text-align: center;
+    padding-left: 30px;
+}
+.content .table-left table img{
+    width: 150px;
+}
+.content .content-right{
+    width: 50%;
+    padding-left: 40px;
+    padding-bottom: 30px;
+}
+.content-right h2{
+    text-align: center;
+    font-size: 30px;
+}
+.total_money{
+    font-size: 30px;
+    font-weight: 600;
+}
+.total_money span{
+    float: right;
+    padding-right: 30px;
+}
+.text_input{
+    padding-top: 30px;
+}
+.text_input i{
+    color:chocolate;
+    padding-right: 10px;
+}
+.text_input input{
+    width: 90%;
+    line-height: 25px;
+    padding-left: 10px;
+}
+#address{
+    line-height: 50px;
+}
+form button{
+    margin-top: 20px;
+    color: white;
+    background-color:chocolate;
+    width: 200px;
+    border-radius: 50px;
+    font-weight: 500;
+    height: 30px;
+    margin-left: 30%;
+}
+form button:hover{
+    background-color:cornsilk;
+    color:chocolate;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+}
+.table-left form button{
+    width:50px;
+}
+#back_menu {
+    margin-top: 20px;
+    background-color:chocolate;
+    width: 200px;
+    border-radius: 50px;
+    font-weight: 500;
+    height: 30px;
+}
+#back_menu:hover{
+    background-color:cornsilk;
+    color:chocolate;
+    transition: 0.5s ease-in-out;
+}
+#back_menu a{
+    text-decoration: none;
+    color: black
+}
+.quantity{
+    width: 60px;
+}
+.table-left form button{
+    width: 35px;
+    border-radius: 5px;
+    height: 23px;
+    margin-left: 0;
+    padding-left: 0;
+}
